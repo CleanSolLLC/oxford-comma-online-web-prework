@@ -1,12 +1,21 @@
-def oxford_comma(array)
-  new_array1 = array.join(" ")
+  array = ["kiwi", "durian", "starfruit", "mangos", "dragon fruits"]
 
-#  array = ["kiwi", "durian", "starfruit", "mangos", "dragon fruits"]
+def oxford_comma(array)
+
   array_last_item = array.last
   index_num = array.find_index(array_last_item)
+
+  if index_num > 0 #more than 1 element in array
   array.pop
   string = "and " + "#{array_last_item}"
   array.insert(index_num, string)
-  new_array2 = array.join("," " ")
+  new_array = array.join("," " ")
+
+elsif index_num == 0 && array[0] != ""
+  new_array = array.join(" ")
+
+else puts "No elements in array!"
+  
+end
 
 end
