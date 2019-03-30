@@ -15,7 +15,7 @@ elsif index_num == 0 && array[0] != ""
   new_array = array.join(" ")
 
 else puts "No elements in array!"
-
+  
 end
 
 end
