@@ -18,7 +18,7 @@ elsif index_num == 1 && array[0,1] != "" #2 elements in array
   new_array = array.join(" ")
 
 elsif index_num == 0 && array[0] != ""
-  new_array = array.join(" ") 
+  new_array = array.join(" ")
 end
 
 end
